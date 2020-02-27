@@ -5,6 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "NumericScalar",
+    platforms: [
+        .iOS(.v10),
+        .watchOS(.v4),
+        .tvOS(.v10),
+        .macOS(.v10_14)
+    ],
     products: [
         .library(
             name: "NumericScalar",
